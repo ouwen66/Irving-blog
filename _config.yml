@@ -117,6 +117,7 @@ sitemap:
 baidusitemap:
       path: baidusitemap.xml
 
+
 #开启字数统计
 word_count: True
 # Deployment
@@ -125,6 +126,15 @@ deploy:
   type: git
   repo: https://gitee.com/ouwen666/ouwen666.git
   branch: master
+
+  
+
+baidu_url_submit:
+  count: 1 ## 比如3，代表提交最新的三个链接
+  host: https://ouwen666.gitee.io ## 在百度站长平台中注册的域名
+  token: Rpuq8cCxqsrZEtH5 ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
 
 jsonContent:
     meta: false
