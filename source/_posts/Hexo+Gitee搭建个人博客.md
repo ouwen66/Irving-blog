@@ -1,13 +1,14 @@
 ---
 title: Hexo+Gitee搭建个人博客
-date: 2020年1月29日21:39:07
-tags: [Hexo,教程]
+tags:
+  - Hexo
+  - 教程
 categories: Hexo
 declare: true
-top: 1
+cover: https://w.wallhaven.cc/full/kw/wallhaven-kwmood.jpg
+top: 2
+abbrlink: 8fe2b6a8
 ---
-
-
 ## 前言
 寒假封城，只能呆在家里鼓捣电脑，有一天看到了b站大佬[CodeSheep](https://space.bilibili.com/384068749)的[手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo](https://www.bilibili.com/video/av44544186?t=1173),看了之后着手搭建了属于自己的博客。
 视频里博客是搭建在Github上的，但其终究是国外的网站，访问速度得不到保障。推荐使用Gitee，Gitee类似于国内的Github，访问速度没问题。
@@ -31,6 +32,7 @@ top: 1
 
 ## 安装Node.js
 [Hexo](https://hexo.io/)是基于[Node.js](https://nodejs.org/en/)制作的静态博客，我们要用到Node.js里面的[npm](https://www.npmjs.cn/)(node package manager)包管理器来安装插件，如果你想玩Hexo博客，那么这个Node.js是必装的。
+
 * [下载地址](https://nodejs.org/en/download/)(选择自己电脑版本相对应的包来下载)
 * 安装步骤：双击下载好的msi文件，也是一路下一步就好了
 * 安装完成后打开Git Bash，输入`node -v`和`npm -v`查看node和npm的版本：
@@ -88,7 +90,7 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.
 这样你就可以再浏览器输入:localhost:4000来访问你的博客啦，使用Ctrl+C可以关闭服务。
 大概是这样：
 
-![Hexo博客首页](/images/blog.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog.jpg)
 
 * 用Hexo写一篇博客
 ```
@@ -131,18 +133,18 @@ $ hexo server         # 启动服务 简写：hexo s
 ```
 打开浏览器输入localhost:4000：
 
-![我的第一篇博客](/images/blog2.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog2.jpg)
 
 ## 将博客部署到Gitee上
 上面访问的localhost:4000是本地服务器端口，我们的博客不可能是放在本地服务器的，我们需要把博客部署到远端去。我这里推荐的一个免费的部署的方式就是部署到[Gitee](https://gitee.com/)上，部署好之后就可以通过访问[Gitee](https://gitee.com/)上的那个地址来访问我们的博客。
 * 进到[Gitee](https://gitee.com/)官网，注册账号并登陆
 * 点击个人主页右上角新建个人仓库
 
-![新建仓库](/images/blog3.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog3.jpg)
 
 * 创建完成后进入仓库
 
-![我的仓库](/images/blog4.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog4.jpg)
 
 * 打开Hexo的配置文件`_config.yml`
 ```
@@ -161,19 +163,19 @@ hexo d  #上传到gitee的远端仓库
 ```
 * 上传成功仓库会多出一些文件
 
-![我的仓库](/images/blog5.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog5.jpg)
 
 * 接着打开Gitee Page服务
 
-![打开服务](/images/blog6.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog6.jpg)
 
 然后点击启动或更新即可。**注意每次更改网页重新上传到仓库都要到这里来更新服务。**
 
-![更新服务](/images/blog7.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog7.jpg)
 
 * 访问Gitee Page服务的网站地址
 
-![成功访问](/images/blog8.jpg)
+![](https://gitee.com/ouwen666/my-image/raw/master/img/blog8.jpg)
 
 从图中地址栏中的网址可以看出我们已经成功将本地的博客部署到了远端仓库，这样你的小伙伴也能在自己的电脑访问你的Gitee Page服务网站看到你的博客啦。
 

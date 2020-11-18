@@ -1,14 +1,20 @@
 ---
 title: 解决Android Studio虚拟机启动不了的问题
-date: 2020-02-16 13:22:50
-tags: [Android Studio,错误集合]
+tags:
+  - Android Studio
+  - 技巧
 categories: Android
 declare: true
+cover: https://w.wallhaven.cc/full/6o/wallhaven-6oj73l.jpg
+abbrlink: bc509111
+date: 2020-02-16 13:22:50
 ---
 
 
 ## 前言
-过几天就要线上教学了，应学院老师要求检查自身设备及软件情况，检查Android Studio的运行情况时，出了点问题。
+过几天就要线上教学了，应学院老师要求检查自身设备及软件情况。
+
+其中检查Android Studio的运行情况时，出了点问题。
 
 <!-- more -->
 ## 问题

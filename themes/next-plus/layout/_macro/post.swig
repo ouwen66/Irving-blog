@@ -14,6 +14,12 @@
       <meta itemprop="name" content="{{ title }}">
     </span>
 
+	{% if post.top %}
+	  <i class="fa fa-thumb-tack"></i>
+	  <font color=222222>置顶</font>
+	  <span class="post-meta-divider">|</span>
+	{% endif %}
+
     {%- if post.header !== false %}
       <header class="post-header">
         <{%- if theme.seo %}h2{% else %}h1{%- endif %} class="post-title{%- if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}" itemprop="name headline">
